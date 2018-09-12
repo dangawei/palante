@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>商品详情</title>
+	<!--css 公用-->
+	@@include('./../inc/css.html')
+	<!--css 公用-->
+	<link rel="stylesheet" href="../css/rentbuy/cardview.css">
+	<link rel="stylesheet" href="/css/quill/quill.bubble.css">
+	<link rel="stylesheet" href="/css/quill/quill.core.css">
+	<link rel="stylesheet" href="/css/quill/quill.snow.css">
+</head>
+<body>
+	<!--header 公用-->
+	@@include('./../inc/header.html')
+	<!--header 公用-->
+	<div class="d-wrap">
+		<div class="itemwarp">
+      <div class="w1200">
+			<div class="itemviewBox">
+					<div class="itemimgBox">
+							<div class="itemmax" id="J_itemmaskimg">
+									<img src="http://image.zjyiwei.com:10080/group1/M00/00/10/wKgBEFsflpCAe2S8AAIOfW1xqOs366.jpg" alt="" width="600">
+							</div>
+							<div class="itemsort">
+								<div class="item-prev"></div>
+								<div class="item-center">
+										<div class="" id="J-itemsortimg">
+											 <ul>
+												<li></li>
+											 </ul>
+										</div>
+								</div>
+								<div class="item-next"></div>
+							</div>
+					</div>
+					<div class="itemskuBox">
+								<div class="item-title">
+									<h1></h1>
+									<p id="J-itembrief"></p>
+								</div>
+								<div class="item-price itemlabel">
+									<dl class="">
+										 <dt>价格</dt>
+										 <dd>
+											 <div class="itemright itemtxt" id="J-itemprice">
+	 											￥120.0
+	 										</div>
+										 </dd>
+									</dl>
+								</div>
+								<div class="" id="J-itemsku">
+								</div>
+								<div class="" id="J-zucheTime">
+								</div>
+								<div class="">
+									<dl class="">
+											<dt>数量</dt>
+											<dd>
+												<div class="itemnum">
+													<span class="num-disable itemnum-min">-</span>
+													<span class="tb-text"><input type="text" autocomplete="off" value="1" class="J_itemnum"></span>
+													<span class="itemnum-plus">+</span>
+												</div>
+											</dd>
+									</dl>
+								</div>
+								<div class="">
+									<dl class="">
+											<dt>提货门店</dt>
+											<dd>
+												<dd class="seled-parent">
+													<span id="sel_shop" class="sel-shop" data-storeId="">选择门店</span>
+												</dd>
+											</dd>
+									</dl>
+								</div>
+								<div class="itemBtn">
+									  <span class="J-itembtn"><a href="javascript:void(0)" class="paybtn buy-btn J-buybtn">立即购买</a></span>
+										<span class="J-showsku gray"></span>
+								</div>
+					</div>
+			</div>
+		</div>
+  	 </div>
+	   <div class="w1200">
+			 <!-- top结束 -->
+			 <div class="d-bottom">
+				  <a href="javascript:void(0)" class="bgc" id="intro_info_btn">车辆介绍<div class="line"></div></a>
+				  <a href="javascript:void(0)"  id="config_param_btn">配置参数<div class="line"></div></a>
+			 </div>
+			 <div class="d-bottom-info">
+				 	<div class="">
+				 			<div class="ql-editor" id="intro_info">
+
+				 			</div>
+				 	</div>
+					<div class="" style="display:none">
+						<div id="config_param">
+						    <div class="carmodelbox">
+						    		<div class="carmodel-bd">
+												<div class="w280 fl carconfiglist" id="J-cardmodle"></div>
+												<div class="" id="J-cardmodlelist">
+
+												</div>
+						    		</div>
+						    </div>
+						</div>
+					</div>
+			 </div>
+
+		 </div>
+	</div>
+	<!--门店-->
+	<div id="J-shop" style="display: none;">
+		@@include('./../inc/selshop.html')
+	</div>
+
+	<!--门店-->
+	<!--footer 公用-->
+	@@include('./../inc/footer.html')
+	<!--footer 公用-->
+	<script>
+		seajs.config({
+			alias:{
+				'jquery':'/conponents/jquery/1.7.1/jquery.js',
+	      		'common':"/js/common/common.js",
+	      		'selshop':"/js/selshop.js",
+			}
+		})
+		seajs.use("/js/rentbuy/cardview.js")
+	</script>
+
+</body>
+</html>

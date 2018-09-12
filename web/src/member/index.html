@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../inc/membercss.html')
+   <!--css 公用-->
+    <link rel="stylesheet" href="../css/mem/login.css"  type="text/css">
+</head>
+<body>
+  <!--css 公用-->
+    @@include('./../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+               @@include('./../inc/memberside.html')
+           </div>
+           <div class="member-right" id="J_memberinfo">111</div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js"
+          }
+      })
+     seajs.use('/js/login/login.js')
+  </script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../../inc/membercss.html')
+   <!--css 公用-->
+   <link rel="stylesheet" href="/css/member/info/userinfo.css">
+</head>
+<body>
+  <!--css 公用-->
+  @@include('./../../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+             @@include('./../../inc/memberside.html')
+           </div>
+           <div class="member-right fr" id="J_memberinfo">
+               <div class="memberinfo-hd">
+                   <h2>实名认证</h2>
+               </div>
+               <div class="memberdatainfo">
+                    <div class="J-cardID-status"></div>
+                    <div class="user-info" id="J-cardID">
+                       <div class="user-info-hd range">
+                           <div class="range-icon"></div>
+                           <div class="user-info-title">身份证认证</div>
+                           <div class="user-info-line"></div>
+                       </div>
+                       <div class="user-info-bd">
+                         <ul>
+                            <li><label>姓名:</label><div class="userinfo-left"><input type="text" class="inputtxt" id="J_rename" /></div></li>
+                            <li><label>性别:</label><div class="userinfo-left"><select class="pc-select" id="J_sexname"><option value="1">男</option><option value="2">女</option></select></li>
+                            <li><label>年龄:</label><div class="userinfo-left"><input type="text" class="inputtxt" id="J_age" /></div></li>
+                            <li><label>生日:</label><div class="userinfo-left"><input type="text" class="inputtxt" id="J_birthday" /></div></li>
+                            <li><label>地址:</label><div class="userinfo-left"><input type="text" class="inputtxt" id="J_address" /></div></li>
+                            <li><label>身份证:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J_cardID"/></span></li>
+                            <!-- <li><label>身份证到期时间:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J_cardendtime"/></span></li> -->
+                            <li>
+                              <div class="carIDbox">
+                                   <div class="cardfront fl mr10">
+                                     <span class="uploadbox">
+                                       <div class="preview-upload-button" >
+                                           <i></i>
+                                           <div class="">
+                                             上传身份证正面
+                                           </div>
+                                          <input type="file" name="mainpic" value="" id="upfile01">
+                                          <div class="uploaditemimg" id="J-uploadimg01">
+                                          </div>
+                                       </div>
+                                     </span>
+                                   </div>
+                                   <div class="reversefront fl mr10">
+                                     <span class="uploadbox">
+                                       <div class="preview-upload-button" >
+                                           <i></i>
+                                           <div class="">
+                                             上传身份证反面
+                                           </div>
+                                          <input type="file" name="mainpic" value="" id="upfile02">
+                                          <div class="uploaditemimg" id="J-uploadimg02">
+                                          </div>
+                                       </div>
+                                     </span>
+                                   </div>
+                              </div>
+                            </li>
+                         </ul>
+                       </div>
+                       <div class="textalign" id="J-userBtn">
+                       </div>
+                    </div>
+               </div>
+
+           </div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js"
+          }
+      })
+     seajs.use('/js/member/info/cardID.js')
+  </script>
+</body>
+</html>

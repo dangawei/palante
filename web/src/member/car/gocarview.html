@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../../inc/membercss.html')
+   <!--css 公用-->
+   <link rel="stylesheet" href="/css/member/car/gocarview.css">
+</head>
+<body>
+  <!--css 公用-->
+  @@include('./../../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+               @@include('./../../inc/memberside.html')
+           </div>
+           <div class="member-right fr" id="J_memberinfo">
+              <div class="memberinfo-hd">
+                  <h2>车辆动态信息</h2>
+              </div>
+              <div class="orderhtml memberdatainfo">
+                  <div id="J_orderhtml">
+                     <div class="pagelist">
+                        <div class="pagelist-hd">
+                            <h2>车架信息</h2>
+                        </div>
+                        <div class="pagelist-bd">
+                           <ul id="J_info">
+                          </ul>
+                        </div>
+                        <div class="divider-horizontal"></div>
+                     </div>
+                     <div class="pagelist">
+                        <div class="pagelist-hd">
+                            <h2>动态信息</h2>
+                        </div>
+                        <div class="pagelist-bd">
+                           <ul id="J_dicinfo">
+                          </ul>
+                        </div>
+                        <div class="divider-horizontal"></div>
+                     </div>
+                  </div>
+                  <div class="textalign">
+                     <a href="javascript:void(0)" class="btn btn-gree" id="J_carbtn">我要报障</a>
+                  </div>
+              </div>
+           </div>
+           <div id="J_carshowview"></div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js"
+          }
+      })
+     seajs.use('/js/member/car/gocarview.js')
+  </script>
+</body>
+</html>

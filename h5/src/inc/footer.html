@@ -1,0 +1,74 @@
+<div id="footerbox">
+  <div class="footer-hd">
+      <div class="w1200">
+     <div class="footer-l">
+        <div class="footerlogo">
+
+        </div>
+        <!-- <dl class="">
+           <dt>测试</dt>
+           <dd>
+             <a href="#">测试1</a>
+           </dd>
+        </dl>
+        <dl class="">
+           <dt>测试</dt>
+           <dd>
+             <a href="#">测试1</a>
+           </dd>
+        </dl> -->
+        <dl class="">
+           <dt>联系电话</dt>
+           <dd>
+             <span class="footer_txt1">400-0000-821</span>
+           </dd>
+           <dd>
+             <span class="footer_txt2">周一至周日 8:00-21:00</span>
+           </dd>
+        </dl>
+     </div>
+     <div class="footer-r">
+        <ul>
+          <li>
+             <img src="/img/vx-code.png" alt="">
+             <p>微信公众号</p>
+          </li>
+          <li>
+             <img src="/img/vx-code.png" alt="">
+             <p>下载APP</p>
+          </li>
+          <li>
+             <img src="/img/vx-code.png" alt="">
+             <p>小程序</p>
+          </li>
+        </ul>
+     </div>
+  </div>
+  </div>
+  <div class="w1200">
+     <div class="footer-about">
+        <a href="/abouts/aboutus.html">关于我们</a>
+     </div>
+    <div class="footer-address">
+         浙江启城新能源汽车有限公司
+    </div>
+    <div class="footer-address">
+      <span>浙江启城新能源汽车有限公司</span> <span>版权所有  浙ICP证B2-20171209号  浙ICP备13046454号-4</span>
+    </div>
+  </div>
+</div>
+<!--浮动 公用-->
+@@include('./fixed.html')
+<!--浮动公用-->
+<!--js 公用-->
+@@include('./js.html')
+<!--js 公用-->
+<script>
+    seajs.config({
+        alias:{
+            'jquery':'/conponents/jquery/1.7.1/jquery.js',
+            'common':"/js/common/common.js"
+        }
+    })
+   seajs.use('/js/gb.js')
+</script>

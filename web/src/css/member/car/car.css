@@ -1,0 +1,59 @@
+.carBox .car_list {
+  float: left;
+  padding: 10px 0;
+  width: 100%;
+  border-bottom: #ebebeb 1px solid;
+  margin-bottom: 15px;
+}
+.carBox .car_list .car-item {
+  float: left;
+  width: 450px;
+}
+.carBox .car_list .car-item .car-item-img {
+  width: 210px;
+  height: 108px;
+  margin-right: 5px;
+}
+.carBox .car_list .car-item .car-item-img img {
+  width: 100%;
+  height: 100%;
+}
+.carBox .car_list .car-item .car-item-title h2 {
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+  font-size: 16px;
+}
+.carBox .car_list .car-item .car-item-title p {
+  color: #999;
+  padding: 4px 0;
+}
+.carBox .car_list .car-parms {
+  float: left;
+  width: 350px;
+}
+.carBox .car_list .car-parms .car-item-title p {
+  padding: 4px 0;
+  float: left;
+  width: 100%;
+}
+.carBox .car_list .car-parms .car-item-title p label {
+  float: left;
+  width: 100px;
+}
+.carBox .car_list .car-parms .car-item-title p label i {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+.carBox .car_list .car-parms .car-item-title p label .location {
+  background: url('../../../img/location.jpg') no-repeat;
+}
+.carBox .car_list .car-parms .car-item-title p label .mileage {
+  background: url('../../../img/mileage.jpg') no-repeat;
+}
+.carBox .car_list .car-parms .car-item-title p label .battery {
+  background: url('../../../img/battery.jpg') no-repeat;
+}

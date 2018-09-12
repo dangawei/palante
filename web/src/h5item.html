@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta content="yes" name="apple-mobile-web-app-capable"/>
+<meta content="yes" name="apple-touch-fullscreen"/>
+<meta content="telephone=no" name="format-detection"/>
+<meta name="apple-mobile-web-app-title" content="浙江启程新能源汽车有限公司">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+<title>浙江启程新能源汽车有限公司</title>
+</head>
+<!--css 公用-->
+@@include('./inc/css.html')
+<!--css 公用-->
+ <link rel="stylesheet" href="/css/h5item.css">
+</style>
+<body>
+<div id="J_itemview">
+
+</div>
+<!--js 公用-->
+@@include('./inc/js.html')
+<!--js 公用-->
+<script type="text/javascript">
+  seajs.config({
+      alias:{
+          'jquery':'/conponents/jquery/1.7.1/jquery.js',
+          'common':"/js/common/common.js"
+      }
+  })
+  seajs.use('/js/h5item.js')
+</script>
+</body>
+</html>

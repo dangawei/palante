@@ -1,0 +1,11 @@
+admin/node_modules/
+admin/.idea/
+admin/dist/
+dealer/node_modules/
+dealer/.idea/
+dealer/dist/
+web/node_modules/
+web/dist/
+h5/node_modules/
+h5/dist/
+.idea/ 

@@ -1,0 +1,68 @@
+.borderbox {
+  border: #aed8ff 1px solid;
+  display: block;
+  float: left;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.borderbox .orderleft {
+  border-left: #ececec 1px solid;
+}
+.borderbox .tableorder {
+  width: 100%;
+}
+.borderbox .tableorder td {
+  vertical-align: top;
+}
+.borderbox .tableorder .tableorder-hd {
+  background: #aed8ff;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+}
+.borderbox .tableorder .tableorder-hd .order-title span {
+  padding: 0 15px;
+}
+.borderbox .tableorder .tableorder-bd .orderitem {
+  border-bottom: #ddd 1px solid;
+}
+.borderbox .tableorder .tableorder-bd .orderitem .orderitemimg {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  overflow: hidden;
+}
+.borderbox .tableorder .tableorder-bd .orderitem .orderitemtitle {
+  height: 40px;
+  line-height: 20px;
+  margin-top: 10px;
+  width: 250px;
+}
+.borderbox .tableorder .tableorder-bd .orderitem .orderitemprice {
+  color: #666;
+  width: 80px;
+  text-align: center;
+  margin-top: 10px;
+}
+.borderbox .tableorder .tableorder-bd .orderitem .orderitemnum {
+  color: #666;
+  width: 80px;
+  text-align: center;
+  margin-top: 10px;
+}
+.borderbox .tableorder .tableorder-bd .orderitem:last-child {
+  border-bottom: none;
+}
+.borderbox .tableorder .tableorder-bd .orderTotal {
+  color: #666;
+  width: 80px;
+  text-align: center;
+  margin-top: 10px;
+  font-weight: bold;
+}
+.borderbox .tableorder .tableorder-bd .orderstatus {
+  color: #666;
+  width: 80px;
+  text-align: center;
+  margin-top: 10px;
+}

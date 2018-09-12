@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>驾驶订单列表</title>
+   <!--css 公用-->
+   @@include('./../../inc/membercss.html')
+   <!--css 公用-->
+   <link rel="stylesheet" href="/css/member/order/order.css">
+</head>
+<body>
+  <!--css 公用-->
+  @@include('./../../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+               @@include('./../../inc/memberside.html')
+           </div>
+           <div class="member-right fr" id="J_memberinfo">
+              <div class="memberinfo-hd">
+                  <h2>我的预约</h2>
+              </div>
+              <div class="formtool">
+                <ul>
+                  <li>
+                      <label class="fl">时间选择：</label>
+                      <div class="fl">
+                        <span class="fl"><input type="text" class="layui-input" id="test1" placeholder="yyyy-MM-dd"></span>
+                        <span class="fl henggang">-</span>
+                        <span class="fl"><input type="text" class="layui-input" id="test2" placeholder="yyyy-MM-dd"></span>
+                      </div>
+                  </li>
+                  <li>
+                        <label class="fl">订单状态：</label>
+                        <div class="fl" id="J-zucheorder">
+                              <select class="pc-select">
+                                  <option value="">全部</option>
+                                  <option value="-1">取消预约</option>
+                                  <option value="1">提交订单</option>
+                                  <option value="2">通知试车</option>
+                                  <option value="3">完成试驾</option>
+                               </select>
+                        </div>
+                  </li>
+                  <li>
+                      <a href="javascript:void(0)" class="btn btn-gree" id="J_searchBtn">搜索</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="orderhtml memberdatainfo">
+                  <div id="J_orderhtml">
+
+                  </div>
+                  <div class="">
+                      <div  id="J_page">
+
+                      </div>
+                  </div>
+              </div>
+           </div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js"
+          }
+      })
+     seajs.use('/js/member/order/driving.js')
+  </script>
+</body>
+</html>

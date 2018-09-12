@@ -1,0 +1,84 @@
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family:'Microsoft YaHei', Heiti SC, PingFangSC-Regular, sans-serif, arial;
+}
+
+body {
+      -webkit-text-size-adjust: 100%;
+      font-size: 14px;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, form, dl, dt, dd, div, span, b, strong, i, em, p {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+ /*// -webkit-user-select: none;*/
+}
+label{
+    font-weight: normal;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+h5{
+    font-size: 12px;
+}
+h1 {
+    font-size: 30px;
+}
+ul {
+    list-style: none;
+}
+.fr{
+    float: right;
+}
+.fl{
+    float: left
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex: 1
+}
+#app{
+    height: 100%;
+    width: 100%;
+    display:flex;
+    flex: 1
+}
+.textalignleft{
+  text-align: left
+}
+.allm20{
+  margin: 20px!important
+}
+.mt10{
+  margin-top: 10px;
+}
+.mr10{
+  margin-right: 10px
+}
+.mb10{
+  margin-bottom: 10px;
+}
+.mt20{
+  margin-top: 30px;
+}
+.ml80{
+  margin-left: 80px
+}
+.ml120{
+  margin-left: 120px
+}
+.ivu-input-large{
+  padding: 6px 11px;
+  height: 40px;
+  font-size: 16px;
+}
+a{
+  cursor: pointer;
+}

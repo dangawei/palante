@@ -1,0 +1,38 @@
+.pagelist {
+  padding: 20px;
+  margin-bottom: 15px;
+}
+.pagelist .pagelist-hd {
+  padding: 10px;
+  border-bottom: #eee 1px solid;
+  display: block;
+}
+.pagelist .pagelist-hd h2 {
+  font-size: 16px;
+}
+.pagelist .pagelist-bd {
+  padding: 10px;
+}
+.pagelist .pagelist-bd ul {
+  float: left;
+  width: 100%;
+}
+.pagelist .pagelist-bd ul li {
+  float: left;
+  width: 50%;
+  padding-bottom: 15px;
+}
+.pagelist .pagelist-bd ul li label {
+  float: left;
+  width: 80px;
+  text-align: left;
+  line-height: 26px;
+  color: #666;
+}
+.pagelist .pagelist-bd ul li .pagetxt {
+  display: block;
+  margin-left: 90px;
+  line-height: 26px;
+  text-align: left;
+  color: #666;
+}

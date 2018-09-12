@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../../inc/membercss.html')
+   <!--css 公用-->
+   <link rel="stylesheet" href="/css/member/order/orderview.css">
+</head>
+<body>
+  <!--css 公用-->
+    @@include('./../../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+              @@include('./../../inc/memberside.html')
+           </div>
+           <div class="member-right fr" id="J_memberinfo">
+               <div class="pagelist">
+                  <div class="pagelist-hd">
+                      <h2>订单信息</h2>
+                  </div>
+                  <div class="pagelist-bd" id="J_orderinfo">
+
+                  </div>
+               </div>
+               <div class="pagelist">
+                  <div class="pagelist-hd">
+                      <h2>商品信息</h2>
+                  </div>
+                  <div class="pagelist-bd" id="J_itemInfo">
+
+                  </div>
+               </div>
+               <div class="pagelist">
+                  <div class="pagelist-hd">
+                      <h2>门店信息</h2>
+                  </div>
+                  <div class="pagelist-bd" id="J_shop">
+
+                  </div>
+               </div>
+               <div class="pagelist">
+                  <div class="pagelist-bd" id="J_orderBtn">
+
+                  </div>
+               </div>
+           </div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js"
+          }
+      })
+     seajs.use('/js/member/order/orderview.js')
+  </script>
+</body>
+</html>

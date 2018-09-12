@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>浙江启程新能源汽车有限公司</title>
+<!--css 公用-->
+@@include('./../inc/css.html')
+<!--css 公用-->
+<link rel="stylesheet" href="/css/swiper.css">
+<link rel="stylesheet" href="/css/pay/pay.css">
+</head>
+<body>
+<!--header 公用-->
+	@@include('./../inc/orderheader.html')
+<!--header 公用-->
+ <div class="pay_box">
+   <div class="w1200">
+     <div class="blockbox mb40">
+         <div class="fl order-info">
+             <div class="order-icon">
+             </div>
+             <div class="order-txt">
+                 <p class="order-secc">支付完成～</p>
+             </div>
+         </div>
+     </div>
+   </div>
+ </div>
+<!--css 公用-->
+@@include('./../inc/footer.html')
+<!--css 公用-->
+<script type="text/javascript" src="/conponents/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+  seajs.config({
+      alias:{
+          'jquery':'/conponents/jquery/1.7.1/jquery.js',
+          'common':"/js/common/common.js"
+      }
+  })
+  seajs.use('/js/pay/success.js')
+</script>
+</body>
+</html>

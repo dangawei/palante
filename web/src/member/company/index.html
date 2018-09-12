@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../../inc/membercss.html')
+   <!--css 公用-->
+   <link rel="stylesheet" href="/css/member/company/userinfo.css">
+</head>
+<body>
+  <!--css 公用-->
+    @@include('./../../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+             @@include('./../../inc/memberside.html')
+           </div>
+           <div class="member-right fr" id="J_memberinfo">
+               <div class="memberinfo-hd">
+                   <h2>基本资料</h2>
+               </div>
+               <div class="memberdatainfo">
+                    <div class="user-info">
+                       <div class="user-info-hd range">
+                           <div class="range-icon"></div>
+                           <div class="user-info-title">填写资料</div>
+                           <div class="user-info-line"></div>
+                       </div>
+                       <div class="user-info-bd">
+                         <ul>
+                            <li><label>公司图片:</label></li>
+                            <li>
+                              <div class="carIDbox">
+                                   <div class="cardfront fl mr10">
+                                     <span class="uploadbox">
+                                       <div class="preview-upload-button" >
+                                           <i></i>
+                                           <div class="">
+                                             上传公司图片
+                                           </div>
+                                          <input type="file" name="mainpic" value="" id="upfile1">
+                                          <div class="uploaditemimg" id="J-uploadimg">
+                                          </div>
+                                       </div>
+                                     </span>
+                                   </div>
+                              </div>
+                            </li>
+                            <li><label>营业执照图片:</label></li>
+                            <li>
+                              <div class="carIDbox">
+                                   <div class="cardfront fl mr10">
+                                     <span class="uploadbox">
+                                       <div class="preview-upload-button" >
+                                           <i></i>
+                                           <div class="">
+                                             上传营业执照图片
+                                           </div>
+                                          <input type="file" name="mainpic" value="" id="upfile2">
+                                          <div class="uploaditemimg" id="J-uploadimg2">
+                                          </div>
+                                       </div>
+                                     </span>
+                                   </div>
+                              </div>
+                            </li>
+                            <li><label>企业名称:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-companyname"/></span></li>
+                            <li><label>营业执照编号:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-businessLicenseNo"/></span></li>
+                            <li><label>联系人:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-user" /></span></li>
+                            <li><label>联系人电话:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-iphone" /></span></li>
+                            <li><label>城市:</label><div id="J-citycomponents"></div></li>
+                            <li><label>具体地址:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-adress" /></span></li>
+                            <li><label>企业简介:</label><span class="userinfo-left w280">
+                              <textarea id="J-brief" rows="10" cols="100%"></textarea>
+                             </span></li>
+                         </ul>
+                         <div class="textalign" id="J-userBtn">
+                              <a href="javascript:void(0)" class="btn">添加</a>
+                         </div>
+                       </div>
+                    </div>
+
+               </div>
+
+           </div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js",
+              'city':"/js/city.js"
+          }
+      })
+     seajs.use('/js/member/company/index.js')
+  </script>
+</body>
+</html>

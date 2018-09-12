@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>浙江启程新能源汽车有限公司</title>
+	<!--css 公用-->
+	@@include('./../inc/css.html')
+	<!--css 公用-->
+	<link rel="stylesheet" href="../css/rentbuy/rentcar.css">
+</head>
+<body>
+	<!--header 公用-->
+	@@include('./../inc/header.html')
+	<!--header 公用-->
+	<div class="rt-wrap">
+		<div class="w1200">
+			<div class="rt-breadcrumb rt-list">
+				<div class="rt-bc-text">
+					<span>您的位置:</span>
+				</div>
+				<div class="ivu-breadcrumb">
+					<span>
+						<a class="ivu-breadcrumb-item-link">首页</a>
+						<span class="ivu-breadcrumb-item-separator">&gt;</span>
+					</span>
+					<span>
+						<a class="ivu-breadcrumb-item-link">以租代购</a>
+						<span class="ivu-breadcrumb-item-separator">&gt;</span>
+					</span>
+					<span>
+						<span class="ivu-breadcrumb-item-link">租赁车辆</span>
+					</span>
+				</div>
+			</div>
+			<div class="rt-list rt-listall">
+				<div class="rt-l-brand rt-l-style clear">
+					<span class="selectname">品牌</span>
+					<div class="rt-l-brand-detail">
+						<ul class="clear ul" id="sel_ul">
+							<li><a href="javascript:;" class="selecttype no-id">不限</a></li>
+						</ul>
+						<div class="drap-down" id="drap_down">
+							<span>全部</span>
+							<i></i>
+						</div>
+						<div class="sel-display" id="sel_display">
+							<ul id="drap_ul">
+
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="rt-l-model rt-l-style clear">
+					<span class="selectname">型号</span>
+					<div class="rt-l-model-detail">
+						<ul class="clear ul" id="sel_ul_model">
+							<li><a href="javascript:;" class="selecttype no-id">不限</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="rt-l-category rt-l-style clear">
+					<span class="selectname">分类</span>
+					<div class="rt-l-model-category">
+						<ul class="clear ul" id="sel_ul_category">
+							<li><a href="javascript:;" class="selecttype no-id">不限</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="rt-list list-select-wrap clear">
+				<div class="rt-l-select">
+					<ul class="clear" id="item_type">
+						<li><a class="active" data-itemtype="2" id="rent_car">租用车辆</a></li>
+						<li><a class="active" data-itemtype="1" id="buy_car">购买车辆</a></li>
+						<li><a data-itemtype="3" id="yugou_car">预购车辆</a></li>
+					</ul>
+				</div>
+				<div class="list-sort" id="list_sort">
+					<!-- <a class="sort-a " id="a_issue">最新发布</a> -->
+					<a class="sort-a active" id="a_sort" data-sort="1">从低到高排序</a>
+				</div>
+			</div>
+			<div class="rt-list">
+				<ul class="carlist clear" id="sel_ul_goods">
+
+				</ul>
+			</div>
+			<div class="rt-list clear list-page">
+				<!-- @@include('./../inc/pagination.html') -->
+				<div class="m-style M-box11"></div>
+			</div>
+		</div>
+	</div>
+	<!--footer 公用-->
+	@@include('./../inc/footer.html')
+	<!--footer 公用-->
+	<script src="../conponents/jquery.pagination.js"></script>
+	<script>
+		seajs.config({
+			alias:{
+				'jquery':'/conponents/jquery/1.7.1/jquery.js',
+          		'common':"/js/common/common.js",
+			}
+		})
+		seajs.use("/js/rentbuy/rentcar.js")
+	</script>
+</body>
+</html>

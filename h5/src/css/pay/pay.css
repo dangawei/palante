@@ -1,0 +1,56 @@
+body {
+  background: #eee;
+}
+.order-info {
+  position: relative;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.order-info .order-secc {
+  color: #6F86D6;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+.order-info .order-icon {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background: url("../../img/order-true.png") no-repeat;
+  width: 64px;
+  height: 64px;
+}
+.order-price {
+  padding: 50px 15px;
+}
+.order-price strong {
+  font-size: 20px;
+  color: #06c;
+}
+.pay_box {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.paylsit {
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  margin: 20px 0;
+}
+.paylsit li {
+  float: left;
+  width: 200px;
+  border: #ddd 2px solid;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+.paylsit li.ative {
+  border: #6F86D6 2px solid;
+}

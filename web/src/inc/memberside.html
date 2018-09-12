@@ -1,0 +1,111 @@
+<div class="membersideinfo">
+  <div class="membersidebox">
+    <div class="memberside-hd">
+       <h2>我的订单</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="/member/order/zucheorder.html">租车订单</a></li>
+         <li><a href="/member/order/sell.html">购车订单</a></li>
+         <li><a href="/member/order/presell.html">预售订单</a></li>
+         <li><a href="/member/order/driving.html">预约试驾</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="membersidebox">
+    <div class="memberside-hd">
+       <h2>我的车辆</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="/member/car/zuche.html">租车车辆</a></li>
+         <li><a href="/member/car/gocar.html">购车车辆</a></li>
+       </ul>
+    </div>
+  </div>
+  <!-- <div class="membersidebox">
+    <div class="memberside-hd">
+       <h2>我的车辆</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="/member/order/zucheorder.html">车辆信息</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="membersidebox">
+    <div class="memberside-hd">
+       <h2>我的资产</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="/member/order/zucheorder.html">账户余额</a></li>
+       </ul>
+    </div>
+  </div> -->
+  <div class="membersidebox" id="J_personmember" style="display:none">
+    <div class="memberside-hd">
+       <h2>个人账户</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="/member/info/index.html">基本资料</a></li>
+         <li><a href="/member/info/cardID.html">实名认证</a></li>
+         <li><a href="/member/info/driver.html">驾驶认证</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="membersidebox" id="J_companymember" style="display:none">
+    <div class="memberside-hd">
+       <h2>企业账户</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="/member/company/index.html">基本资料</a></li>
+       </ul>
+    </div>
+  </div>
+  <!-- <div class="membersidebox">
+    <div class="memberside-hd">
+       <h2>我的邀请</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="#">我的邀请码</a></li>
+         <li><a href="#">邀请列表</a></li>
+         <li><a href="#">我的奖励</a></li>
+       </ul>
+    </div>
+  </div>
+  <div class="membersidebox">
+    <div class="memberside-hd">
+       <h2>维修记录</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="#">预约维修</a></li>
+         <li><a href="#">维修状态</a></li>
+       </ul>
+    </div>
+  </div>-->
+  <div class="membersidebox">
+    <div class="memberside-hd">
+       <h2>售后管理</h2>
+    </div>
+    <div class="memberside-bd">
+       <ul>
+         <li><a href="/member/fault/list.html">售后列表</a></li>
+       </ul>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  setTimeout(function () {
+    if(window.sessionStorage.getItem('userType')==2){
+        document.getElementById('J_companymember').style.display="block"
+    }
+    if(window.sessionStorage.getItem('userType')==1){
+        document.getElementById('J_personmember').style.display="block"
+    }
+  },300)
+</script>

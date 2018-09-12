@@ -1,0 +1,68 @@
+html,
+body {
+  background: #eee;
+}
+.memberdatainfo {
+  padding: 20px;
+}
+#J_memberNav {
+  width: 220px;
+  background: #fff;
+  margin: 40px 0;
+}
+.membersidebox {
+  float: left;
+  width: 100%;
+}
+.membersidebox .memberside-hd {
+  height: 50px;
+  line-height: 50px;
+  border-top: #F2F3F5 1px solid;
+  border-bottom: #F2F3F5 1px solid;
+}
+.membersidebox .memberside-hd h2 {
+  padding-left: 20px;
+  font-weight: bold;
+}
+.membersidebox .memberside-bd ul li {
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+}
+.membersidebox .memberside-bd ul li a {
+  padding: 0 20px;
+}
+#J_memberinfo {
+  width: 970px;
+  min-height: 100px;
+  background: #fff;
+  overflow: hidden;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+#J_memberinfo .memberinfo-hd {
+  height: 50px;
+  line-height: 50px;
+  text-align: left;
+}
+#J_memberinfo .memberinfo-hd h2 {
+  font-size: 20px;
+  color: #333;
+  border-bottom: #F2F3F5 1px solid;
+  padding: 0 15px;
+}
+#J_memberinfo .formtool {
+  float: left;
+  width: 100%;
+}
+#J_memberinfo .formtool ul li {
+  float: left;
+  padding: 10PX 0;
+  margin: 0 10px;
+}
+#J_memberinfo .formtool ul li label {
+  width: 70px;
+  text-align: right;
+  float: left;
+  line-height: 40px;
+}

@@ -1,0 +1,160 @@
+.sm-shop{
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    .sm-content{
+    	position: fixed;
+	    z-index: 1000;
+	    width: 900px;
+	    height: 536px;
+	    left: 50%;
+	    margin-left: -450px;
+	    top: 50%;
+	    margin-top: -268px;
+	    background-color: #fff;
+	    .sm_title{
+    	    background: #e6e6e6;
+		    color: #666;
+		    padding: 8px 18px;
+		    position: relative;
+		    i{
+		    	position: absolute;
+			    right: 8px;
+			    top: 0px;
+			    font-size: 30px;
+			    font-weight: 100;
+			    cursor: pointer;
+			    font-style: normal;
+		    }
+	    }
+	    .sm_bottom{
+	    	min-height: 450px;
+	    	padding:0px 10px;
+	    }
+	    .sm-addarea{
+	    	padding: 8px 0;
+	    }
+	    .sm-distpicker{
+	    	display: inline-block;
+	    	select{
+	    		width: 120px;
+    			font-size: 12px;
+    			list-style: none;
+			    border: 1px solid #ddd;
+			    border-radius: 4px;
+			    height: 30px;
+			    line-height: 30px;
+			    padding: 0 10px;
+			    margin-right: 10px;
+			    font-size: 14px;
+			    color: #666;
+			    text-align: left;
+			    position: relative;
+	    	}
+	    }
+	    .sm-container{
+	    	overflow: hidden;
+	    }
+	    .left{
+	    	width: 350px;
+		    height: 400px;
+		    border: 1px solid #ddd;
+		    overflow: auto;
+		    float: left;
+	    }
+	    .selected{
+	    	background: #f5f5f5;
+	    }
+	    .store-item{
+	    	padding: 10px 10px 10px 0;
+    		cursor: pointer;
+				border-bottom: #f5f5f5 1px solid
+	    }
+	    .store-info{
+	    	padding-left: 30px;
+	    	.store-name{
+				font-size: 14px;
+    			color: #333;
+    			height: 20px;
+    			line-height: 20px;
+	    	}
+	    	p{
+	    		height: 20px;
+			    line-height: 20px;
+			    color: #999;
+			    font-size: 12px;
+	    	}
+	    	.store-address{
+	    		max-width: 260px;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			    overflow: hidden;
+	    	}
+	    }
+	    .container{
+	    	width: 526px;
+	    	height: 402px;
+	    }
+	    .appointment-store-footer{
+	    	padding: 8px 10px;
+	    	text-align: right;
+	    	button{
+		    	display: inline-block;
+			    height: 32px;
+			    width: 80px;
+			    text-align: center;
+			    border-radius: 4px;
+			    border: none;
+			    margin-left: 10px;
+			    outline: none;
+			    cursor: pointer;
+		    }
+		    .default{
+		    	background: #fff;
+    			border: 1px solid #ddd;
+		    }
+		    .primary{
+		    	color: #fff;
+		    	background: #6F86D6;
+		    }
+	    }
+
+    }
+    .info {
+        border: solid 1px silver;
+        .info-top {
+            position: relative;
+            padding-left: 10px;
+            background: none repeat scroll 0 0 #F9F9F9;
+            border-bottom: 1px solid #CCC;
+            border-radius: 5px 5px 0 0;
+            img {
+	            position: absolute;
+	            top: 5px;
+	            right: 10px;
+	            transition-duration: 0.25s;
+	        }
+        }
+        .info-middle {
+            font-size: 12px;
+            padding: 6px;
+            line-height: 20px;
+        }
+        .info-bottom {
+            height: 0px;
+            width: 100%;
+            clear: both;
+            text-align: center;
+            img {
+            	display: inline !important;
+
+	        }
+        }
+    }
+}

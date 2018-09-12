@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../../inc/membercss.html')
+   <!--css 公用-->
+   <link rel="stylesheet" href="/css/member/info/userinfo.css">
+</head>
+<body>
+  <!--css 公用-->
+    @@include('./../../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+             @@include('./../../inc/memberside.html')
+           </div>
+           <div class="member-right fr" id="J_memberinfo">
+               <div class="memberinfo-hd">
+                   <h2>基本资料</h2>
+               </div>
+               <div class="memberdatainfo">
+                    <div class="user-info">
+                       <div class="user-info-hd range">
+                           <div class="range-icon"></div>
+                           <div class="user-info-title">填写资料</div>
+                           <div class="user-info-line"></div>
+                       </div>
+                       <div class="user-info-bd">
+                         <ul>
+                            <li><label>头像:</label></li>
+                            <li>
+                              <div class="carIDbox">
+                                   <div class="cardfront fl mr10">
+                                     <span class="uploadbox">
+                                       <div class="preview-upload-button" >
+                                           <i></i>
+                                           <div class="">
+                                             上传头像
+                                           </div>
+                                          <input type="file" name="mainpic" value="" id="upfile1">
+                                          <div class="uploaditemimg" id="J-uploadimg">
+                                          </div>
+                                       </div>
+                                     </span>
+                                   </div>
+                              </div>
+                            </li>
+                            <li><label>生日:</label><span class="userinfo-left w280"><input type="text" class="inputtxt"  id="J-rename"/></span></li>
+                            <li><label>性别:</label><span class="userinfo-left w280"><select class="pc-select" id="J-sex"><option value="1">男</option><option value="2">女</option></select></span></li>
+                            <li><label>年龄:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-agx"/></span></li>
+                            <li><label>联系电话:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-iphone" /></span></li>
+                            <li><label>城市:</label><div id="J-citycomponents"></div></li>
+                            <li><label>具体地址:</label><span class="userinfo-left w280"><input type="text" class="inputtxt" id="J-adress" /></span></li>
+                         </ul>
+                         <div class="textalign" id="J-userBtn">
+                              <a href="javascript:void(0)" class="btn">添加</a>
+                         </div>
+                       </div>
+                    </div>
+
+               </div>
+
+           </div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js",
+              'city':"/js/city.js"
+          }
+      })
+     seajs.use('/js/member/info/index.js')
+  </script>
+</body>
+</html>

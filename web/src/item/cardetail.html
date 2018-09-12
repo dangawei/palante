@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>详情</title>
+	<!--css 公用-->
+	@@include('./../inc/css.html')
+	<!--css 公用-->
+	<link rel="stylesheet" href="../css/rentbuy/cardetail.css">
+</head>
+<body>
+	<!--header 公用-->
+	@@include('./../inc/header.html')
+	<!--header 公用-->
+	<div class="d-wrap">
+		<div class="w1200">
+			<div class="d-top clear">
+				<div class="dt-img">
+					<div class="dt-img-big">
+						<div class="bigimg-box">
+							<ul class="det-picside js-picside" data-role="dt-img-big" id="dt_img_big"></ul>
+						</div>
+
+					</div>
+					<div class="dt-img-small clear">
+						<div class="smallimg-box" id="smallimg_box">
+							<ul class="clear" data-role="tabImgGroup" data-tab="1" style="position:relative;" id="dt_small_img">
+              </ul>
+						</div>
+                        <a href="javascript:;" class="a-left" id="a_left"></a>
+                        <a href="javascript:;" class="a-right" id="a_right"></a>
+					</div>
+				</div>
+				<div class="dt-img-info">
+					<div class="imginfo-box" id="imginfo_box">
+						<h2 id="h2"></h2>
+						<div id="dt_pricermb">
+							<dl class="goods-price">
+								<dt id="dt_price">价格</dt>
+								<dd id="dt_rmb">￥4000</dd>
+							</dl>
+						</div>
+						<div id="cash_deposit" class="dt-cash-deposit">
+							<dl class="cash-deposit">
+								<dt id="dt_deposit_text">定金:</dt>
+								<dd id="dt_deposit"></dd>
+							</dl>
+						</div>
+						<div id="item_sku">
+
+						</div>
+						<div>
+							<!-- <dl>
+								<dt>属性版本</dt>
+								<dd>
+									<ol class="J_SizeList size-list seled-parent" id="item_sku">
+										<li></li>
+									</ol>
+								</dd>
+							</dl> -->
+							<dl id="rent_duration_parent">
+								<dt>租车时间</dt>
+								<dd>
+									<ol class="J_SizeList size-list seled-parent" id="rent_duration">
+										<li data-duration="6">半年</li>
+										<li data-duration="12">一年</li>
+										<li data-duration="24">两年</li>
+										<li data-duration="36">三年</li>
+									</ol>
+								</dd>
+							</dl>
+							<dl>
+								<dt>数量</dt>
+								<dd class="clear">
+									<div id="J_GoodsNum" class="goods-num fl seled-parent">
+				                        <span class="num-reduce num-disable" id="num_reduce">-</span>
+				                        <input autocomplete="off" class="num-input seled" type="text" value="1" readonly="" id="goods_value">
+				                        <span class="num-add  num-disable" id="num_add">+</span>
+				                    </div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>选择门店</dt>
+								<dd class="seled-parent">
+									<input type="button" value="选择门店" readonly="" id="sel_shop" class="sel-shop" data-storeId="">
+								</dd>
+							</dl>
+						</div>
+						<div class="a-but fl" id="create_order">
+							<a data-orderType="1" style="display: none;" id="buy_carBtn">购买车辆</a>
+							<a data-orderType="2" id="rent_carBtn">租赁车辆</a>
+							<a data-orderType="3" style="display: none;" id="prebuy_carBtn">预购车辆</a>
+						</div>
+						<div class="fl info-phone none">
+							<p>免费电话</p>
+							<p>000-124566</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- top结束 -->
+			<div class="d-bottom">
+				<div class="bottom-title">
+					<ul class="clear" id="sel_param">
+						<li class="fl"><a class="bgc" id="intro_info_btn">车辆介绍</a></li>
+						<li class="fl"><a id="config_param_btn">配置参数</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="d-bottom-info" id="intro_info">
+
+			</div>
+			<div id="config_param">
+				<iframe src="" frameborder="0"></iframe>
+			</div>
+		</div>
+	</div>
+	<!--门店-->
+	<div id="J-shop" style="display: none;">
+		@@include('./../inc/selshop.html')
+	</div>
+
+	<!--门店-->
+	<!--footer 公用-->
+	@@include('./../inc/footer.html')
+	<!--footer 公用-->
+	<script>
+		seajs.config({
+			alias:{
+				'jquery':'/conponents/jquery/1.7.1/jquery.js',
+	      		'common':"/js/common/common.js",
+	      		'selshop':"/js/selshop.js",
+			}
+		})
+		seajs.use("/js/rentbuy/cardetail.js")
+	</script>
+
+</body>
+</html>

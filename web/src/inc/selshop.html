@@ -1,0 +1,48 @@
+<link rel="stylesheet" href="../css/selshop.css">
+<div class="sm-shop">
+	<div></div>
+	<div class="sm-content">
+		<div class="sm_title">
+			选择门店
+			<i id="J-shopclose">×</i>
+		</div>
+		<div class="sm_bottom">
+			<div class="sm-addarea">
+				<div data-toggle="distpicker" id="sm_distpicker" class="sm-distpicker">
+					<select id="province" data-value-type="300000" data-province="浙江省"></select><!-- 省 -->
+					<select id="city" data-value-type="300100" data-city="杭州市"></select><!-- 市 -->
+					<select id="district" data-value-type="300106" data-district="西湖区"></select data-district="西湖区"><!-- 区 -->
+				</div>
+			</div>
+			<div id="sm_container" class="sm-container">
+				<div class="left" id="left">
+					<div class="store-item selected">
+						<div class="store-info">
+
+						</div>
+					</div>
+				</div>
+				<div id="container" class="container"></div>
+				<div class="appointment-store-footer">
+					<button class="default" id="J_sure_colse">取消</button>
+					<button class="primary" id="sure_sel">确定</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=5e1fe28e0100adf9d34ec4b8ff4c5069&plugin=AMap.Autocomplete,AMap.PlaceSearch,AMap.ToolBar"></script>
+<script type="text/javascript" src="/conponents/sea/sea.js"></script>
+<script>
+	seajs.config({
+      	alias:{
+            'jquery':'/conponents/jquery/1.7.1/jquery.js',
+            'common':"/js/common/common.js",
+            'distpickerData':'/conponents/distpicker.common.js',
+            'distpicker':"/conponents/distpicker.min.js",
+            'mapPath':'http://webapi.amap.com/maps?v=1.3&key=5e1fe28e0100adf9d34ec4b8ff4c5069',
+            'cardetail':'/js/rentbuy/cardetail.js'
+      	}
+  	});
+  	seajs.use('/js/selshop.js');
+</script>

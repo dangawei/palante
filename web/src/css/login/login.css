@@ -1,0 +1,121 @@
+.logincomponentbox {
+  width: 100%;
+  background: url("../../img/loginbg.jpg") center no-repeat;
+  height: 765px;
+}
+.logincomponentbox .tc_login {
+  width: 400px;
+  overflow: hidden;
+  background-color: #FFF;
+  float: right;
+  margin: 108px 20px 0 0;
+  border-radius: 5px;
+}
+.logincomponentbox .tc_login .login_HDB {
+  padding: 0 30px;
+}
+.logincomponentbox .tc_login .login_HDBegt {
+  overflow: hidden;
+  padding: 10px 30px;
+}
+.logincomponentbox .tc_login #tit2 {
+  font-size: 16px;
+  color: #444;
+  height: 35px;
+  padding: 58px 0 0 0;
+  text-align: center;
+}
+.logincomponentbox .tc_login .k_sj,
+.logincomponentbox .tc_login .k_mm {
+  height: 48px;
+  border: 1px solid #ddd;
+  margin-top: 10px;
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  position: relative;
+}
+.logincomponentbox .tc_login .k_sj .telicon,
+.logincomponentbox .tc_login .k_mm .telicon {
+  height: 48px;
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  background: url("/img/login-icon.png") center no-repeat;
+}
+.logincomponentbox .tc_login .k_sj .telpassword,
+.logincomponentbox .tc_login .k_mm .telpassword {
+  height: 48px;
+  width: 20px;
+  position: absolute;
+  left: 10px;
+  background: url("/img/user_lock.png") center no-repeat;
+}
+.logincomponentbox .tc_login .k_sj input,
+.logincomponentbox .tc_login .k_mm input {
+  width: 230px;
+  height: 44px;
+  line-height: 44px;
+  float: left;
+  margin: 0 0 0 40px;
+  font-size: 14px;
+  color: #666;
+  background: #f8f8f8;
+  border: none;
+}
+.logincomponentbox .tc_login .login_Btn {
+  display: block;
+  height: 48px;
+  line-height: 48px;
+  background-color: #1e87e5;
+  text-align: center;
+  font-size: 16px;
+  color: #FFF;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.logincomponentbox .tc_login .forget_a {
+  font-size: 12px;
+  position: absolute;
+  top: 10px;
+}
+.logincomponentbox .tc_login .noHao {
+  height: 58px;
+  line-height: 58px;
+  color: #444;
+  font-size: 12px;
+  text-align: right;
+  padding-right: 20px;
+}
+.logincomponentbox .tc_login .noHao a {
+  color: #1e87e5;
+}
+.logincomponentbox .tc_login .person {
+  padding: 10px 0;
+}
+.logincomponentbox .tc_login .person span {
+  padding-right: 15px;
+  cursor: pointer;
+}
+.icon {
+  background: url("../../img/green.png");
+}
+.tabs-person i,
+.tabs-compant i {
+  display: inline-block;
+  width: 23px;
+  height: 23px;
+  background-position: 120px 0;
+  vertical-align: middle;
+}
+.tabs-person.ative i,
+.tabs-compant.ative i {
+  background-position: 72px 0;
+}
+#J_telcode {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 90px;
+  cursor: pointer;
+  z-index: 100;
+}

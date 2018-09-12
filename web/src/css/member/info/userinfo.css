@@ -1,0 +1,28 @@
+.user-info .user-info-hd {
+  float: left;
+  width: 100%;
+}
+.user-info .user-info-bd {
+  float: left;
+  width: 100%;
+  padding: 15px 0;
+}
+.user-info .user-info-bd ul li {
+  margin-bottom: 15px;
+  width: 100%;
+  float: left;
+}
+.user-info .user-info-bd ul li label {
+  float: left;
+  width: 130px;
+  text-align: right;
+  line-height: 40px;
+  padding-right: 10px;
+}
+.user-info .user-info-bd ul li .userinfo-left input {
+  width: 280px;
+}
+.carIDbox {
+  display: block;
+  margin-left: 150px;
+}

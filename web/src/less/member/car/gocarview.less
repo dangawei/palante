@@ -1,0 +1,57 @@
+.carshow{
+  position:fixed;
+  top: 0;
+  right: 0;
+  bottom:0;
+  left: 0;
+  z-index: 1000;
+  .mask{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom:0;
+    left: 0;
+    background: rgba(0,0,0,.5);
+    z-index: 1000;
+  }
+  .carinfo{
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -250px;
+    background: #fff;
+    z-index: 1001;
+    .carinfo-hd{
+      height: 50px;
+      line-height: 50px;
+      border-bottom: #ddd 1px solid;
+      text-indent: 2em
+    }
+    .carinfo-bd{
+      padding: 20px;
+      ul{
+        li{
+          width: 100%;
+          margin-top: 20px;
+          label{
+            float: left;
+            width: 80px;
+            text-align: right;
+            color: #666
+          }
+          .carinfo-detail{
+            display: block;
+            margin-left: 90px;
+            .textarea{
+              width: 100%;
+              height: 80px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

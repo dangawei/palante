@@ -1,0 +1,16 @@
+.problembg {
+  background: url("/img/about.jpg") center no-repeat;
+  height: 300px;
+  width: 100%;
+}
+.company-hd {
+  padding: 20px 0;
+  border-bottom: #EEEEEE 1px solid;
+  margin-bottom: 20px;
+}
+.company-hd h2 {
+  font-size: 20px;
+}
+.company-hd p {
+  color: #8C8C8C;
+}

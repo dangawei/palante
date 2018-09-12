@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>浙江启程新能源汽车有限公司</title>
+<!--css 公用-->
+@@include('./../inc/css.html')
+<!--css 公用-->
+<link rel="stylesheet" href="/css/swiper.css">
+<link rel="stylesheet" href="/css/pay/pay.css">
+</head>
+<body>
+<!--header 公用-->
+	@@include('./../inc/orderheader.html')
+<!--header 公用-->
+ <div class="pay_box">
+   <div class="w1200">
+     <div class="blockbox mb40">
+         <div class="fl order-info">
+             <div class="order-icon">
+             </div>
+             <div class="order-txt">
+                 <p class="order-secc">订单提交成功，快去支付吧～</p>
+                 <p class="gray">请在1小时内完成订单，否则自动取消订单</p>
+             </div>
+         </div>
+         <div class="fr order-price">
+               <p>待支付金额：<strong id="J-order-price"></strong></p>
+         </div>
+     </div>
+     <div class="pagebox">
+         <div class="pagebox-hd">
+           支付方式
+         </div>
+         <div class="pagebox-bd">
+               <ul class="paylsit" id="J_playlist">
+                 <li class="" data-name="alipay" data-payID="1">
+                   <div class="">
+                     支付宝支付
+                     <em></em>
+                   </div>
+                 </li>
+                 <li class="" data-name="weixin" data-payID="2">
+                   <div >
+                     微信支付
+                   </div>
+                 </li>
+								 <li class="" data-name="outline" data-payID="3">
+									 <div >
+										 线下支付
+									 </div>
+								 </li>
+               </ul>
+               <div class="textalign">
+                   <a href="javascript:void(0)" class="btn btn-gree" id="J-order-Btn">确认支付</a>
+               </div>
+         </div>
+     </div>
+		 <div class="" id="J_playhtml"></div>
+		 <div id="J_maskBOX" style="display:none">
+			 		<div class="J_weixinpay">
+							<div class="J_weixinpay-hd">
+							</div>
+							<div class="J_weixinpay-bd">
+									<div class="" id="J_weixinprice">
+											 1244
+									</div>
+									<div id="J_weixincode">
+
+									</div>
+									<div class="J_weixinBTN">
+											取消支付
+									</div>
+							</div>
+					</div>
+
+		 </div>
+   </div>
+ </div>
+<!--css 公用-->
+@@include('./../inc/footer.html')
+<!--css 公用-->
+<script type="text/javascript" src="/js/swiper.js"></script>
+<script type="text/javascript" src="/conponents/jquery.qrcode.min.js"></script>
+<script type="text/javascript">
+  seajs.config({
+      alias:{
+          'jquery':'/conponents/jquery/1.7.1/jquery.js',
+          'common':"/js/common/common.js"
+      }
+  })
+  seajs.use('/js/pay/index.js')
+</script>
+</body>
+</html>

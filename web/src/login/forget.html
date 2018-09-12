@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../inc/css.html')
+   <!--css 公用-->
+    <link rel="stylesheet" href="../css/login/login.css"  type="text/css">
+</head>
+<body>
+  <!--css 公用-->
+  @@include('./../inc/minheader.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+          <div class="login-hd">
+               <div class="tc_login">
+                   <div class="login_HDB">
+                       <p class="tit3" id="tit2">
+                           忘记密码
+                       </p>
+                       <div class="error_ts"></div>
+                       <div class="login_tcs login_tc0 thisOver">
+                           <div class="k_sj"><span></span><input name="" type="tel" placeholder="输入手机号" id="lg_form_account" autocomplete="off"></div>
+                           <div class="k_sj"><input name="" id="J_telval" type="tel" placeholder="" autocomplete="off"><input id="J_telcode" name="" type="button" value="获取验证码" placeholder="" ></div>
+                           <div class="k_mm"><span></span><input name="" type="password" placeholder="输入密码" id="lg_form_password" autocomplete="off"></div>
+                           <div class="k_mm"><span></span><input name="" type="password" placeholder="输入密码" id="lg_form_password01" autocomplete="off"></div>
+                       </div>
+                       <a class="login_Btn" href="javascript:void(0)" id="J_reg">确认</a>
+                       <div class="noHao" style="display: block;">我已有帐号，<a href="/login/index.html">我要登录</a></div>
+                       <div class="" id="title">
+
+                       </div>
+                   </div>
+               </div>
+          </div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js"
+          }
+      })
+     seajs.use('/js/login/forget.js')
+  </script>
+</body>
+</html>

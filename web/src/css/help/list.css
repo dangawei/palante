@@ -1,0 +1,47 @@
+body {
+  background-color: #f0f4fb;
+}
+.help {
+  background: #fff;
+  margin-top: 25px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.help .help-side {
+  background-color: #fafafa;
+  width: 270px;
+  height: 100%;
+  border-right: 1px solid #f8f8f8;
+  float: left;
+}
+.help .help-side ul li {
+  height: 60px;
+  line-height: 60px;
+  color: #303030;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 1px solid #f5f5f5;
+}
+.help .help-content-warp {
+  display: block;
+  margin-left: 280px;
+}
+.help .help-content-warp .help-content-hd {
+  height: 60px;
+  line-height: 60px;
+  border-bottom: #ddd 1px solid;
+  float: left;
+  width: 100%;
+}
+.help .help-content-warp .help-content-bd {
+  float: left;
+  width: 100%;
+}
+.help .help-content-warp .help-content-bd #J-help-conter li {
+  height: 45px;
+  line-height: 45px;
+  padding-left: 15px;
+}
+.help .help-content-warp .help-content-bd #J-help-conter li a {
+  display: block;
+}

@@ -1,0 +1,299 @@
+.itemwarp {
+  background: #f9f9fc;
+  padding: 30px 0;
+}
+.carmodelbox {
+  overflow: hidden;
+}
+.carmodelbox .carmodel-bd {
+  display: block;
+  border: #ddd 1px solid;
+  min-height: 500px;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.carmodelbox .carmodel-bd .carconfiglist {
+  border-right: #ddd 1px solid;
+}
+.carmodelbox .carmodel-bd .carconfiglist ul li > div {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background: #f5f5f5;
+  text-indent: 1em;
+  overflow: hidden;
+}
+.carmodelbox .carmodel-bd .carconfiglist ul li p {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-indent: 1em;
+  overflow: hidden;
+}
+.itemviewBox {
+  overflow: hidden;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 4px 8px 0 rgba(63, 67, 89, 0.08);
+}
+.itemviewBox .itemimgBox {
+  float: left;
+  width: 600px;
+  overflow: hidden;
+}
+.itemviewBox .itemimgBox .itemmax {
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.itemviewBox .itemimgBox .itemsort {
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+.itemviewBox .itemimgBox .itemsort .item-prev {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 70px;
+  background: url("/img/item-left.png") center no-repeat;
+  cursor: pointer;
+}
+.itemviewBox .itemimgBox .itemsort .item-next {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 50px;
+  height: 70px;
+  background: url("/img/item-right.png") center no-repeat;
+  cursor: pointer;
+}
+.itemviewBox .itemimgBox .itemsort .item-center {
+  margin: 0 50px;
+  display: block;
+  overflow: hidden;
+}
+.itemviewBox .itemimgBox .itemsort .item-center ul li {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  cursor: pointer;
+  float: left;
+  padding: 2px;
+  border: #ddd 1px solid;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.itemviewBox .itemimgBox .itemsort .item-center ul li.c {
+  border: #f30 1px solid;
+}
+.itemviewBox .itemskuBox {
+  display: block;
+  margin-left: 620px;
+}
+.itemviewBox .itemskuBox .item-title {
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+.itemviewBox .itemskuBox .item-title h1 {
+  font-size: 24px;
+  color: #3f4359;
+  letter-spacing: 0;
+  line-height: 33px;
+  font-weight: 600;
+  font-family: PingFangSC-Regular;
+  max-height: 40px;
+  overflow: hidden;
+}
+.itemviewBox .itemskuBox dl {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
+}
+.itemviewBox .itemskuBox dl dt {
+  float: left;
+  width: 60px;
+  color: #999;
+}
+.itemviewBox .itemskuBox dl dd {
+  display: block;
+  margin-left: 60px;
+}
+.itemviewBox .itemskuBox dl dd ol li {
+  margin: 0 10px 5px 0;
+  cursor: pointer;
+  float: left;
+  padding: 0 10px;
+  font-weight: 700;
+  line-height: 28px;
+  border: 1px solid #ddd;
+  white-space: nowrap;
+  word-wrap: normal;
+  -webkit-transition-property: border-color;
+  -moz-transition-property: border-color;
+  -o-transition-property: border-color;
+  transition-property: border-color;
+  -webkit-transition-duration: .2s;
+  -moz-transition-duration: .2s;
+  -o-transition-duration: .2s;
+  transition-duration: .2s;
+}
+.itemviewBox .itemskuBox dl dd ol li img {
+  width: 45px;
+  height: 45px;
+}
+.itemviewBox .itemskuBox dl dd ol .img {
+  padding: 0;
+}
+.itemviewBox .itemskuBox dl dd .color-list .c {
+  border: 2px solid #666;
+  line-height: 28px;
+  margin: -1px 9px 4px -1px;
+  position: relative;
+}
+.itemviewBox .itemskuBox dl dd .color-list .c b {
+  display: block;
+}
+.itemviewBox .itemskuBox dl dd .color-list b {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 11px;
+  height: 11px;
+  background: url(https://s10.mogucdn.com/pic/140804/eeee_ieygcmbsmuywcnzxmiytambqgiyde_11x11.png) 100% 100% no-repeat;
+}
+.itemviewBox .itemskuBox dl dd .style-list .c,
+.itemviewBox .itemskuBox dl dd .size-list .c,
+.itemviewBox .itemskuBox dl dd .time-list .c,
+.itemviewBox .itemskuBox dl dd .sku-list .c {
+  background: url(https://s10.mogucdn.com/pic/140804/eeee_ieygcmbsmuywcnzxmiytambqgiyde_11x11.png) 100% 100% no-repeat;
+  border: 2px solid #666;
+  line-height: 28px;
+  margin: -1px 9px 4px -1px;
+}
+.itemviewBox .itemskuBox dl dd .sel-shop {
+  border: #ddd 1px solid;
+  background: #fff;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+.itemviewBox .itemskuBox .itemnum {
+  position: relative;
+  width: 95px;
+  height: 30px;
+  zoom: 1;
+  border: 1px solid #ddd;
+}
+.itemviewBox .itemskuBox .itemnum span {
+  width: 25px;
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  float: left;
+}
+.itemviewBox .itemskuBox .itemnum .tb-text {
+  float: left;
+  width: 42px;
+  height: 30px;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.itemviewBox .itemskuBox .itemnum .tb-text input {
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 14px;
+  border: 0;
+  height: 30px;
+  border: none;
+  float: left;
+  background: none;
+}
+.itemviewBox .itemskuBox .itemBtn {
+  margin-left: 60px;
+}
+.itemviewBox .itemskuBox .buy-btn {
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+}
+.itemviewBox .itemskuBox .paybtn {
+  width: 200px;
+  background: #6F86D6;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+}
+#J-itembrief {
+  color: #999;
+  padding: 5px 0;
+}
+.d-bottom {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+}
+.d-bottom a {
+  display: block;
+  margin-top: 28px;
+  height: 31px;
+  margin-right: 50px;
+  float: left;
+  text-align: left;
+  font-size: 16px;
+  color: #8d91ac;
+  line-height: 16px;
+  cursor: pointer;
+}
+.d-bottom a .line {
+  display: none;
+  width: 48px;
+  height: 4px;
+  background-image: linear-gradient(90deg, #ff7414, #fb4a14);
+  border-radius: 30px;
+  margin: 12px auto 0;
+}
+.d-bottom .bgc .line {
+  display: block;
+}
+.d-bottom-info {
+  padding: 40px 0;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+.d-bottom-info .ql-align-center {
+  text-align: center;
+}
+.d-bottom-info h2 {
+  font-size: 20px;
+  padding: 5px;
+}
+.d-bottom-info h3 {
+  font-size: 18px;
+  padding: 5px;
+}
+.d-bottom-info h4 {
+  font-size: 16px;
+  padding: 5px;
+}
+.d-bottom-info h5 {
+  font-size: 14px;
+  padding: 5px;
+}
+.d-bottom-info h6 {
+  font-size: 12px;
+  padding: 5px;
+}
+.d-bottom-info img {
+  max-width: 100%;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>经销商查询</title>
+	<!--css 公用-->
+	@@include('./../inc/css.html')
+	<!--css 公用-->
+	<link rel="stylesheet" href="../css/dealersearch/dealersearch.css">
+	<!-- <link rel="stylesheet" href="http://cache.amap.com/lbs/static/main1119.css"/> -->
+	<style>
+		#container{
+
+		}
+	</style>
+</head>
+<body>
+	<!--css 公用-->
+	@@include('./../inc/header.html')
+	<!--css 公用-->
+	<div class="dealersearch w1200">
+		<div>
+			<div class="ds-text">
+				<p>经销商查询</p>
+			</div>
+		</div>
+		<div class="ds-addarea">
+			<div data-toggle="distpicker" id="ds-distpicker" class="ds-distpicker">
+				<select id="province" data-value-type="code" class="pc-select"></select><!-- 省 -->
+				<select id="city" data-value-type="code"  class="pc-select"></select><!-- 市 -->
+				<select id="district" data-value-type="code"  class="pc-select"></select><!-- 区 -->
+			</div>
+		</div>
+		<div id="ds-container" class="ds-container">
+			<div id="container" class="container"></div>
+
+		</div>
+	</div>
+	<!--css 公用-->
+	@@include('./../inc/footer.html')
+	<!--css 公用-->
+	<script type="text/javascript" src="http://webapi.amap.com/maps?v=1.3&key=5e1fe28e0100adf9d34ec4b8ff4c5069&plugin=AMap.Autocomplete,AMap.PlaceSearch,AMap.ToolBar"></script>
+	<script>
+		seajs.config({
+          	alias:{
+	            'jquery':'/conponents/jquery/1.7.1/jquery.js',
+	            'common':"/js/common/common.js",
+	            'distpickerData':'/conponents/distpicker.common.js',
+	            'distpicker':"/conponents/distpicker.min.js",
+	            'mapPath':'http://webapi.amap.com/maps?v=1.3&key=5e1fe28e0100adf9d34ec4b8ff4c5069'
+          	}
+      	});
+      	seajs.use('/js/dealersearch/dealersearch.js');
+	</script>
+</body>
+</html>

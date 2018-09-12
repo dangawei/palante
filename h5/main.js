@@ -1,0 +1,1 @@
+define("a",function(n,e,o){console.log("执行a.js")}),define("test",["a"],function(n,e,o){n("a"),console.log("执行test.js")}),define("main",["test"],function(n,e,o){n("test"),console.log("执行main.js")});

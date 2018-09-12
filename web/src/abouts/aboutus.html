@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>浙江启程新能源汽车有限公司</title>
+<!--css 公用-->
+@@include('./../inc/css.html')
+<!--css 公用-->
+<link rel="stylesheet" href="/css/swiper.css">
+<link rel="stylesheet" href="/css/company.css">
+</head>
+<body>
+<!--header 公用-->
+	@@include('./../inc/header.html')
+<!--header 公用-->
+<div class="company-box w1200">
+      <div class="company-hd">
+          <h2>公司简介</h2>
+          <p>Company profile</p>
+      </div>
+      <div class="company-bd" id="J-company-bd">				  
+      </div>
+</div>
+<!--css 公用-->
+@@include('./../inc/footer.html')
+<!--css 公用-->
+<script type="text/javascript" src="/js/swiper.js"></script>
+<script type="text/javascript">
+  seajs.config({
+      alias:{
+          'jquery':'/conponents/jquery/1.7.1/jquery.js',
+          'common':"/js/common/common.js"
+      }
+  })
+  seajs.use('/js/abouts.js')
+</script>
+</body>
+</html>

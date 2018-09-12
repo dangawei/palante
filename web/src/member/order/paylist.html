@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>浙江启程新能源汽车有限公司</title>
+   <!--css 公用-->
+   @@include('./../../inc/membercss.html')
+   <!--css 公用-->
+   <link rel="stylesheet" href="/css/member/order/paylist.css">
+</head>
+<body>
+  <!--css 公用-->
+  @@include('./../../inc/header.html')
+  <!--css 公用-->
+  <div class="logincomponentbox">
+      <div class="w1200">
+           <div class="fl" id="J_memberNav">
+              @@include('./../../inc/memberside.html')
+           </div>
+           <div class="member-right fr" id="J_memberinfo">
+              <div class="orderbox">
+                  <!--状态-->
+                  <div class="productbox" id="J-pay-item">
+
+                  </div>
+                  <!--费用-->
+                  <div class="order-price" id="J-price-order">
+
+                  </div>
+                <!--支付列表-->
+                <div class="pagebox none">
+                    <div class="pagebox-hd">
+                      支付方式
+                    </div>
+                    <div class="pagebox-bd">
+                          <ul class="paylsit">
+                            <li class="ative" data-name="alipay">
+                              <div >
+                                支付宝支付
+                                <em></em>
+                              </div>
+                            </li>
+                            <li data-name="weixin">
+                              <div >
+                                微信支付
+                              </div>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+              </div>
+              <div class="textalign mt40 orderBtn" id="J-order-Btn"></div>
+           </div>
+           <div class="none" id="J_playhtml"></div>
+      </div>
+  </div>
+  <!--css 公用-->
+  @@include('./../../inc/footer.html')
+  <!--css 公用-->
+  <script>
+      seajs.config({
+          alias:{
+              'jquery':'/conponents/jquery/1.7.1/jquery.js',
+              'common':"/js/common/common.js"
+          }
+      })
+     seajs.use('/js/member/order/paylist.js')
+  </script>
+</body>
+</html>

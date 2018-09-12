@@ -1,0 +1,195 @@
+.swiper-container {
+  width: 100%;
+  height: 600px;
+}
+.swiper-container01 {
+  width: 100%;
+  height: 500px;
+}
+.swiper-container a{
+   background: url(../../img/banner.jpg) center no-repeat;
+   height: 600px;
+   width: 100%
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.car_index_box{
+
+}
+.car_index_box .car_index_hd{
+  width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 50px 0
+}
+.car_index_box .car_index_hd h2{
+  font-size: 40px;
+  color: #000;
+}
+.car_index_bd{
+  position:relative;
+}
+.car_index_title h2{
+  font-size: 20px;
+  color: #000;
+  line-height: 30px;
+  padding: 10px 0
+}
+.car_index_title p{
+  font-size: 18px;
+  color: #8C8C8C;
+  line-height: 30px;
+  padding: 10px 0
+}
+.car_price{
+  color: #000;
+  font-size: 20px;
+}
+
+.severbox{
+ float: left;
+ width: 100%
+}
+.severbox .itembox{
+  float: left;
+  width: 25%;
+  min-height: 100px;
+}
+.itembox1{
+  background:url("../img/service-01.png") center no-repeat;
+  height: 740px;
+}
+.itembox2{
+  background:url("../img/service-02.png") center no-repeat;
+  height: 740px;
+}
+.itembox3{
+  background:url("../img/service-03.png") center no-repeat;
+  height: 740px;
+}
+.itembox4{
+  background:url("../img/service-04.png") center no-repeat;
+  height: 740px;
+}
+.sever{
+  padding-top: 280px;
+  text-align: center;
+  color: #fff
+}
+.sever h2{
+   font-size: 30px
+}
+.sever p{
+   font-size: 16px;
+   padding: 10px 0
+}
+
+.wordbox{
+  background: #fff;
+  float: left;
+  width: 100%;
+  padding:50px 0;
+}
+.worditem li{
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+.worditemlist{
+  float: left;
+  width: 100%;
+  border-right: #ddd 1px solid;
+  margin: 20px 0
+}
+
+.worditemlist .wordtxt{
+  font-size: 40px;
+  color: #B3B3B3;
+  padding: 10px 0
+}
+
+.worditemlist .wordinfo{
+   color: #333;
+   font-size: 18px;
+}
+
+.aboutbox{
+   background:url("../img/about.jpg") top no-repeat;
+   float: left;
+   width: 100%
+}
+.about-item{
+  margin-top: 280px;
+  margin-bottom: 50px;
+  display: block;
+  background: rgba(255,255,255,.8);
+  text-align: center;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+.about-hd{
+    padding: 50px 0
+}
+.about-hd h2{
+  font-size: 30px;
+  padding: 15px 0
+}
+.about-hd p{
+  font-size: 24px;
+  color: #999;
+  padding: 20px 0
+}
+.about_txt{
+   width: 800px;
+   margin: 0 auto;
+   font-size: 16px;
+   color: #333;
+   line-height: 36px;
+}
+.about-bd{
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.about_btn{
+  float: left;
+  width: 100%;
+  padding: 15px 0
+}
+
+.ciyt-itembox{
+   float: left;
+   width: 100%;
+   padding: 50px 0
+}
+.itembox-hd{
+  text-align: center;
+  padding: 20px 0
+}
+.itembox-hd h2{
+  font-size: 26px;
+  color: #333
+}
+.itembox-bd{
+  padding: 10px 0
+}
+
+.itembox-bd a{
+  padding: 0 10px
+}

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>浙江启程新能源汽车有限公司</title>
+<!--css 公用-->
+@@include('./inc/css.html')
+<!--css 公用-->
+<link rel="stylesheet" href="/css/swiper.css">
+<link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+<!--header 公用-->
+@@include('./inc/header.html')
+<!--header 公用-->
+<!--banner管理-->
+ <div class="swiper-container">
+     <div class="swiper-wrapper" id="J_bannerbox">
+     </div>
+     <!-- Add Pagination -->
+     <div class="swiper-pagination swiper-pagination01"></div>
+     <div class="w1200">
+       <div class="swiper-button-prev swiper-button-white"></div>
+       <div class="swiper-button-next swiper-button-white"></div>
+     </div>
+ </div>
+<!--banner管理-->
+<div class="car_index_box">
+      <div class="car_index_hd">
+            <h2>热门推荐</h2>
+      </div>
+      <div class="car_index_bd">
+        <div class="swiper-container01">
+            <div class="swiper-wrapper" id="J_hotItem">
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination02"></div>
+            <!-- Add Arrows -->
+           <div class="swiper-button-next swiper-button-next01"></div>
+           <div class="swiper-button-prev swiper-button-prev01"></div>
+        </div>
+      </div>
+</div>
+<!--sever-->
+<div class="severbox">
+   <div class="itembox itembox1">
+      <a href="/item/list.html?itemType=2">
+        <div class="sever">
+           <h2>租车服务</h2>
+           <p>您最便捷的租车方式</p>
+        </div>
+      </a>
+   </div>
+   <div class="itembox itembox2">
+     <a href="/item/list.html?itemType=1">
+       <div class="sever">
+          <h2>购车服务</h2>
+          <p>轻松购车，享受服务</p>
+       </div>
+    </a>
+   </div>
+   <div class="itembox itembox3">
+     <a href="/item/list.html?brandId=&itemType=3">
+       <div class="sever">
+          <h2>预售服务</h2>
+          <p>我们有最专业的服务人员</p>
+       </div>
+     </a>
+   </div>
+   <div class="itembox itembox4">
+     <a href="/precontract.html">
+       <div class="sever">
+          <h2>预约试驾</h2>
+          <p>为您安排最舒适的驾车</p>
+       </div>
+     </a>
+   </div>
+</div>
+<!--sever-->
+<div class="wordbox">
+    <div class="w1200">
+           <ul class="worditem">
+              <li>
+                <div class="worditemlist">
+                     <div class="wordtxt">
+                        8
+                     </div>
+                     <div class="wordinfo">
+                       城市
+                     </div>
+                </div>
+              </li>
+              <li>
+                <div class="worditemlist">
+                  <div class="wordtxt">
+                     10,000+
+                  </div>
+                  <div class="wordinfo">
+                    车型
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="worditemlist">
+                  <div class="wordtxt">
+                     190,000+
+                  </div>
+                  <div class="wordinfo">
+                    会员
+                  </div>
+                </div>
+              </li>
+           </ul>
+    </div>
+</div>
+<div class="aboutbox">
+    <div class="w1200">
+      <div class="about-item">
+        <div class="about-hd">
+              <h2>关于我们</h2>
+              <p>我们为您提供最好的保障</p>
+        </div>
+        <div class="about-bd">
+            <p class="about_txt">
+              启城是超威集团下属专业从事新能源车运营的公司; 成立于2016年;专业从事提供新能源汽车运营平台系统化解决方案...
+            </p>
+            <div class="about_btn">
+             <a href="/abouts/aboutus.html">了解更多》》</a>
+           </div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="aboutbox">
+    <div class="w1200">
+
+    </div>
+</div>
+<!--css 公用-->
+@@include('./inc/footer.html')
+<!--css 公用-->
+<script type="text/javascript" src="/js/swiper.js"></script>
+<script type="text/javascript">
+  seajs.config({
+      alias:{
+          'jquery':'/conponents/jquery/1.7.1/jquery.js',
+          'common':"/js/common/common.js"
+      }
+  })
+  seajs.use('/js/index.js')
+</script>
+</body>
+</html>

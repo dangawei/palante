@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>浙江启程新能源汽车有限公司</title>
+<!--css 公用-->
+@@include('./../inc/css.html')
+<!--css 公用-->
+<link rel="stylesheet" href="/css/swiper.css">
+<link rel="stylesheet" href="/css/order/order.css">
+</head>
+<body>
+<!--header 公用-->
+	@@include('./../inc/orderheader.html')
+<!--header 公用-->
+ <div class="pay_box">
+   <div class="w1200">
+      <div class="stepBox">
+          <div class="stepline">
+
+          </div>
+          <div class="stepnum">
+              <div class="step step1 stepsecce">
+								<div class="stepblock">
+									<div class="stepicon">1</div>
+									<div class="">选择车辆</div>
+								</div>
+              </div>
+              <div class="step step2 ative">
+								<div class="stepblock">
+	                <div class="stepicon">2</div>
+	                <div class="">确认订单</div>
+								</div>
+              </div>
+              <div class="step step3">
+								<div class="stepblock">
+	                <div class="stepicon">3</div>
+	                <div class="">支付</div>
+								</div>
+              </div>
+              <div class="step step4">
+								<div class="stepblock">
+	                <div class="stepicon">4</div>
+	                <div class="">订单完成</div>
+								</div>
+              </div>
+          </div>
+      </div>
+			<div class="orderBox">
+					<div class="orderBox-hd">
+							<ul>
+								<li class="w70">车辆信息</li>
+						  	<li class="w10">单价</li>
+								<li class="w10">数量</li>							
+								<li class="w10">小计</li>
+							</ul>
+					</div>
+					<div class="orderBox-bd">
+							<div class="itemBox">
+									<div class="itemBox-hd">
+											<div class="" id="J-itemshop">
+												红石中央大厦
+											</div>
+									</div>
+									<div class="itemBox-bd" id="J-itemlist">
+
+									</div>
+							</div>
+					</div>
+			</div>
+			<div class="order-price">
+					<div class="fr w300">
+							<div class="order-info" id="J-order-price">
+							</div>
+							<div class="order-Btn" id="J-order-sumit">
+								<input type="button" name="" value="提交订单">
+							</div>
+					</div>
+			</div>
+   </div>
+ </div>
+<!--css 公用-->
+@@include('./../inc/footer.html')
+<!--css 公用-->
+<script type="text/javascript" src="/js/swiper.js"></script>
+<script type="text/javascript">
+  seajs.config({
+      alias:{
+          'jquery':'/conponents/jquery/1.7.1/jquery.js',
+          'common':"/js/common/common.js"
+      }
+  })
+  seajs.use('/js/payorder/order.js')
+</script>
+</body>
+</html>
